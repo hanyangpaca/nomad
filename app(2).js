@@ -60,7 +60,7 @@ const playerPoints = 121212;
 const playerHandsome = false;
 const playerFat = 'little bit';
 
-const player = ['nico',1212,false,'little bit'];
+//const player = ['nico',1212,false,'little bit'];
 // 이러한 array는 각 정보의 의미를 담고 있지 않다. 그래서 부적합하다.
 // player[0] == name 이런 식으로 정리라도 할 수 있지만.. 좀 귀찮다. 
 // 그럴때 object를 활용할 수 있다. 
@@ -69,8 +69,7 @@ const player = {
     name:'nico',
     points: 10,
     fat: true,
-
-}
+};
 // 중괄호를 열어주는 것이 차이다. 약간 딕셔너리 형태다. 
 
 console.log(player); 
@@ -79,5 +78,14 @@ player.name
 
 /* 
 콘솔이라는 객체 안에 log라는 명령어가 있다. 마찬가지로 player.name을 하면 
-player라는 객체 ( object ) 안에서 name을 찾는(명령하는) 것과 같다. */
+player라는 객체 ( object ) 안에서 name을 찾는(명령하는) 것과 같다. 
+*/
+
+console.log(player); // fat이 true 에서 
+player.fat = false; 
+player.LastName = 'potato';
+console.log(player); 
+// fat이 false가 될수 있다. object 전체를 한번에 날린 게 아니라 수정이 가능하다.
+// 또 LastName 를 var 해주면 object가 const여도 뭔가 추가할수가 있다.
+
 
