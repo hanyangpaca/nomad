@@ -179,7 +179,7 @@ console.log(plusResult);
 // 메세지가 일단 못생겼고 ㅋ CSS를 적용시킬수가 없어서.. 옛 방식이다.
 // cancel 누르면 null 뜨고 그런다.. 
 
-typeof age1
+//typeof age1
 
 // type of를 하면 age의 data type을 확인할 수가 있다. 
 // " 15 " => 15 로 바꾸는 메쏘오드가 존재한다. 
@@ -201,9 +201,26 @@ console.log(isNaN(age1));
 // 숫자를 쓰면 false ( is not a number? ) 를 반환한다. 
 // 나머지는 다 true 반환한다. 
 
-if (isNaN(age1)){
-    alert("Please write a number")
-} 
+if (isNaN(age1) || age1 < 0){
+    alert(" 제대로 된 숫자와 양수를 대입해주십시오. ");
+} else if (age1< 18){
+    alert("술은 좀 이르지 않습니까?");
+} else if (age1 >= 18 && age1 <= 50) {
+    alert("한잔 하시죠!");
+} else if (age1 > 50 && age <=80) {
+    alert("운동을 좀 하실 나이입니다.");
+} else if (age1 > 80){
+    alert("알아서 하십쇼!!"); 
+} else {
+    alert("와우");
+}
 
+// 파이썬처럼 else if 가 존재한다. 반례중에서 뭐가 있다면이ㅏㄷ.
+// 약간 그럼 css 섞어서 prompt 랑 함께 활용하면 게임도 만들겠다. 
+// 조건문따라서 prompt 반복하게 하면... 음.. 
+// && 이 AND라고 보면 된다. || 은 or 이다. 둘중 하나면 된다.
+// || 은 둘중 하나만 true 면 true고 &&는 둘중 하나만 false 면 false다.
+// else를 꼭 써야하는 것은 아니다. 
+// isNaN에 의해서 음수나 문자가 대입되게 되면 if 가 true가 되어서 첫번째를 실행한다.
 
 
