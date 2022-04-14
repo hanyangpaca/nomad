@@ -108,7 +108,7 @@ function caption(msg){
     alert(msg)
 }
 
-caption("hi")
+//caption("hi")
 
 // 2.11 Returns 
 
@@ -159,18 +159,51 @@ console.log(calculateKrAge)
 // 이렇게 하게 되면 age에 96을 호출해서 fucntion을 가고 96 +2 가 실행되고 98이 return 된다.
 // 이것도 파이썬이랑 똑같넹 ㅋㅋ 개꿀쥄 ㅋ 
 
+/*
 const plusResult = calculator.plus1(2, 3);
 const minusResult = calculator.minus(2, plusResult);
 console.log(plusResult);
+*/
 
 // 이렇게 하게 되면 plusResult를 return 값으로 가지고 반환하게 된다.
 // 또 plus, minus가 상호의존적으로 구성될 수가 있다. 
 // 또 이러면 콘솔창에서 각각의 값에 접근할 수가 있다. variable의 value를 지정할 수 있게 된다. 
 // 또 return 앞의 명령어까지만 실행한다.
 
+// 2.13 2.14 2.15 Conditionals 1,2,3
 
+//const age1 = prompt("How old are you?")
+// prompt 는 창을 띄울 수 있게 해주는 함수다. 
+// 미친 함수 뒤 괄호에 마우스 올리면 뭐 할 수 있는지 알려주네
+// 이걸 실행하게 되면 JS console은 멈춰있다. 그래서 더 이상 이 함수는 안쓴다. 
+// 메세지가 일단 못생겼고 ㅋ CSS를 적용시킬수가 없어서.. 옛 방식이다.
+// cancel 누르면 null 뜨고 그런다.. 
 
+typeof age1
 
+// type of를 하면 age의 data type을 확인할 수가 있다. 
+// " 15 " => 15 로 바꾸는 메쏘오드가 존재한다. 
+
+console.log(typeof "15", typeof parseInt("15"));
+
+// 이렇게 하게 되면 15가 숫자로 반환된다. 
+// 이 방식이 좋은 이유는 숫자간의 크기 비교가 가능하기 때문이다.
+// 또 숫자가 아닌 정보를 입력했을때 parseInt로 숫자 변환이 안되면 NaN이 나와서 막을 수 있다.
+// 나이 적으라고 했는데 개소리 치면 반환안되는 느낌이랄까? 
+
+const age1 = parseInt(prompt("How old are you?"));
+
+console.log(age1)
+
+console.log(isNaN(age1));
+
+// isNan 을 쓰면 숫자인지 아닌지 boolean 값으로 반환해준다.
+// 숫자를 쓰면 false ( is not a number? ) 를 반환한다. 
+// 나머지는 다 true 반환한다. 
+
+if (isNaN(age1)){
+    alert("Please write a number")
+} 
 
 
 
