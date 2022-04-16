@@ -1,9 +1,7 @@
 
-const age1 = parseInt(prompt("How old are you?"));
+// 3.0 
+// js 를 통해서 html 을 변경할 수도 있다.
+// document.title = ~ 하면 변한다. 
 
-console.log(age1)
-console.log(isNaN(age1));
+// 3.1 HTML in JavaScript 
 
-if (isNaN(age1)){
-    alert("Please write a number")
-} 
